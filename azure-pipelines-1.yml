@@ -32,4 +32,4 @@ steps:
     containerId: 'PLAY006559'
     taskLevel: 'DEV1'
     downloadUnchangedSource: true
-    downloadIncludes: true
+    downloadIncludes: false
