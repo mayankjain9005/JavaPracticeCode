@@ -24,7 +24,7 @@ steps:
     connectionId: 'cw09.compuware.com:47623#1047 - Latin 1'
     runtimeConfig: 'tpzp'
     ispwUserId: 'ispwtpz'
-    password: '${pwd}'
+    password: '$(pwd)'
     windowsTopazWorkbenchCliHome: 'C:\Topaz\20.12\WorkbenchCLI'
     windowsSourceDownloadLocation: 'C:\agent'
     downloadSourceType: 'Container'
