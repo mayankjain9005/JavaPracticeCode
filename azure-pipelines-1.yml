@@ -22,10 +22,10 @@ steps:
   inputs:
     connectionId: 'cw09.compuware.com:47623#1047 - Latin 1'
     cesUrl: 'http://localhost:48080'
-    cesSecretToken: 'a7c35910-8775-4ba7-8b94-ad6822f9296c'
+    cesSecretToken: '1fa526c3-6be5-4181-a4ff-10abb4c2185a	'
     action: 'PromoteAssignment'
     request: |
-      assignmentId=PLAY006759
-       level= DEV1
+      assignmentId=HARY008369
+       level= STG1
     skipWaitingForSetCompletion: 'No'
     showResponseBodyInConsole: 'No'
