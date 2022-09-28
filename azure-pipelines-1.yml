@@ -21,7 +21,7 @@ steps:
 - task: azure-deveops-ispw-operation-task@1
   inputs:
     connectionId: 'cw09.compuware.com:47623#1047 - Latin 1'
-    cesUrl: 'localhost:48080'
+    cesUrl: 'http://localhost:48080'
     cesSecretToken: 'a7c35910-8775-4ba7-8b94-ad6822f9296c'
     action: 'PromoteAssignment'
     request: |
