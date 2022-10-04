@@ -28,4 +28,4 @@ steps:
       runtimeConfiguration=TPTP
       level=DEV1
     skipWaitingForSetCompletion: false
-    showResponseBodyInConsole: false
+    showResponseBodyInConsole: true
