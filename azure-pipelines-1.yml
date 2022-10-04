@@ -26,5 +26,6 @@ steps:
     request: |
       assignmentId=HARY0008363
       runtimeConfiguration=TPTP
+      level=DEV1
     skipWaitingForSetCompletion: false
     showResponseBodyInConsole: true
