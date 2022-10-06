@@ -17,13 +17,14 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
-
-
-    - task: azure-deveops-ispw-operation-task@1
-       inputs:
-         connectionId: 'cw09.compuware.com:47624#1047 - Latin 1'
-         cesUrl: 'http://172.19.173.31:48226'
-         cesSecretToken: '$(cesToken)'
-         action: 'PromoteAssignment'
-         skipWaitingForSetCompletion: false
-         showResponseBodyInConsole: true
+- task: azure-deveops-ispw-operation-task@1
+  inputs:
+    connectionId: 'cw09.compuware.com:47624#1047 - Latin 1'
+    cesUrl: 'http://172.19.173.31:48226'
+    cesSecretToken: '$(cesToken)'
+    action: 'PromoteAssignment'
+    request: |
+      assignmentId=HARY008363
+      level=DEV1
+    skipWaitingForSetCompletion: false
+    showResponseBodyInConsole: true
