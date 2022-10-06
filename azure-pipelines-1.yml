@@ -22,10 +22,7 @@ steps:
     connectionId: 'cw09.compuware.com:47624#1047 - Latin 1'
     cesUrl: 'http://172.19.173.31:48226'
     cesSecretToken: '$(cesToken)'
-    action: 'RegressAssignment'
+    action: 'PromoteAssignment'
     request: |
       assignmentId=HARY008363
-      runtimeConfiguration=TPTP
-      level=STG1
-    skipWaitingForSetCompletion: false
-    showResponseBodyInConsole: true
+      level=DEV1
