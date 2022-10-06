@@ -32,6 +32,6 @@ steps:
        # The property value should be based on your own container ID and level.
        #
       assignmentId=HARY008363
-      level=STG1
+      level=DEV1
     skipWaitingForSetCompletion: false
     showResponseBodyInConsole: true
