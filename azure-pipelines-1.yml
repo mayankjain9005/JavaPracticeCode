@@ -25,7 +25,7 @@ steps:
     ispwUserId: 'ispwtpz'
     password: 'ispw09'
     windowsTopazWorkbenchCliHome: 'C:\Topaz\WorkbenchCLI'
-    windowsSourceDownloadLocation: C:\tmp'
+    windowsSourceDownloadLocation: 'C:\tmp'
     downloadSourceType: 'Container'
     containerType: 'Assignment'
     containerId: 'HARY008363'
