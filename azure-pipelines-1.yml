@@ -18,14 +18,14 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
   
-  - task: downloadertask@1
-    inputs:
-      connectionId: 'cw09.compuware.com:47624#'
-      runtimeConfig: 'tpzp'
-      ispwUserId: 'ispwtpz'
-      password: 'ispw09'
-      windowsTopazWorkbenchCliHome: 'C:\Topaz\WorkbenchCLI'
-      windowsSourceDownloadLocation: 'C:\Topaz'
-      downloadSourceType: 'Container'
-      containerType: 'Assignment'
-      containerId: 'HARY008363'
+- task: downloadertask@1
+  inputs:
+    connectionId: 'cw09.compuware.com:47624#'
+    runtimeConfig: 'tpzp'
+    ispwUserId: 'ispwtpz'
+    password: 'ispw09'
+    windowsTopazWorkbenchCliHome: 'C:\Topaz\WorkbenchCLI'
+    windowsSourceDownloadLocation: 'C:\Topaz'
+    downloadSourceType: 'Container'
+    containerType: 'Assignment'
+    containerId: 'HARY008363'
