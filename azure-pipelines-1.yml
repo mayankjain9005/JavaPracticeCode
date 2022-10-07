@@ -21,7 +21,7 @@ steps:
 - task: downloadertask@1
   inputs:
     connectionId: 'cw09.compuware.com:47624#'
-    runtimeConfig: 'tpzp'
+    runtimeConfig: 'tptp'
     ispwUserId: 'ispwtpz'
     password: 'ispw09'
     windowsTopazWorkbenchCliHome: 'C:\Topaz\WorkbenchCLI'
