@@ -17,10 +17,11 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
-  -task: downloadertask@1
+  
+  - task: downloadertask@1
     inputs:
       connectionId: 'cw09.compuware.com:47624#'
-      runtimeConfig: 'tptp'
+      runtimeConfig: 'tpzp'
       ispwUserId: 'ispwtpz'
       password: 'ispw09'
       windowsTopazWorkbenchCliHome: 'C:\Topaz\WorkbenchCLI'
