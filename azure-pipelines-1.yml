@@ -2,12 +2,12 @@
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
-
+ 
 trigger:
 - master
 
 pool:
-  name: default
+  name: server
 
 steps:
 - script: echo Hello, world!
@@ -24,4 +24,4 @@ steps:
     method: 'GET'
     urlSuffix: 'https://eon1hl6bz3xygny.m.pipedream.net'
     waitForCompletion: 'true'
-    pool: server
+  
