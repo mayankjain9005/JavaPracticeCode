@@ -28,5 +28,5 @@ steps:
       "TaskInstanceId": "$(system.TaskInstanceId)", 
       "AuthToken": "$(system.AccessToken)"
       }
-    waitForCompletion: 'false'
+    waitForCompletion: 'true'
   
