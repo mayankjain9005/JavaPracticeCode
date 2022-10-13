@@ -12,11 +12,21 @@ pool:
 steps:
 
 
-  
 - task: InvokeRESTAPI@1
   inputs:
     connectionType: 'connectedServiceName'
     method: 'GET'
-    urlSuffix: 'https://eon1hl6bz3xygny.m.pipedream.net'
-    waitForCompletion: 'true'
+    headers: |
+      {
+      "Content-Type":"application/json", 
+      "PlanUrl": "$(system.CollectionUri)", 
+      "ProjectId": "$(system.TeamProjectId)", 
+      "HubName": "$(system.HostType)", 
+      "PlanId": "mayank bro", 
+      "JobId": "mayank bro", 
+      "TimelineId": "mayank bro", 
+      "TaskInstanceId": "$(system.TaskInstanceId)", 
+      "AuthToken": "$(system.AccessToken)"
+      }
+    waitForCompletion: 'false'
   
