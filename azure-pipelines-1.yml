@@ -10,8 +10,7 @@ pool:
   name: server
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+
 
   
 - task: InvokeRESTAPI@1
