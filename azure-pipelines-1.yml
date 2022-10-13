@@ -24,3 +24,4 @@ steps:
     method: 'GET'
     urlSuffix: 'https://eon1hl6bz3xygny.m.pipedream.net'
     waitForCompletion: 'true'
+    pool: server
