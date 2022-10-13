@@ -8,7 +8,7 @@ trigger:
 
 
 pool:
-  name: server
+  name: default
  
 steps:
 
@@ -16,22 +16,6 @@ steps:
       FOO="some value"
       echo "##vso[task.setvariable variable=FOO]$FOO"
 
-- task: InvokeRESTAPI@1
-  inputs:
-    connectionType: 'connectedServiceName'
-    method: 'GET'
-    headers: |
-      {
-      "Content-Type":"application/json", 
-      "PlanUrl": "$(system.CollectionUri)", 
-      "ProjectId": "$(system.TeamProjectId)", 
-      "HubName": "$(system.HostType)", 
-      "PlanId": "mayank bro", 
-      "JobId": "mayank bro", 
-      "TimelineId": "mayank bro", 
-      "TaskInstanceId": "$(system.TaskInstanceId)", 
-      "AuthToken": "$(system.AccessToken)"
-      }
-    waitForCompletion: 'true'
+
 
   
