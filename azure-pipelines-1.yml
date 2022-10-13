@@ -18,14 +18,9 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
   
-- task: downloadertask@1
+- task: InvokeRESTAPI@1
   inputs:
-    connectionId: 'cw09.compuware.com:47624#'
-    runtimeConfig: 'tptp'
-    ispwUserId: 'ispwtpz'
-    password: 'ispw09'
-    windowsTopazWorkbenchCliHome: 'C:\Topaz\WorkbenchCLI'
-    windowsSourceDownloadLocation: 'C:\tmp'
-    downloadSourceType: 'Container'
-    containerType: 'Assignment'
-    containerId: 'HARY008363'
+    connectionType: 'connectedServiceName'
+    method: 'GET'
+    urlSuffix: 'https://eon1hl6bz3xygny.m.pipedream.net'
+    waitForCompletion: 'true'
