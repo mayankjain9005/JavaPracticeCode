@@ -11,6 +11,6 @@ pool:
   name: default
  
 steps:
-- bash: echo This script could use $SYSTEM_ACCESSTOKEN
+- downloadBuild: echo This script could use $(Agent.BuildDirectory)
     
   
