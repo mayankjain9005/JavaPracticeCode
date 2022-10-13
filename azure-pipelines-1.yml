@@ -11,11 +11,6 @@ pool:
   name: default
  
 steps:
-
-- bash: |
-      FOO="some value"
-      echo "##vso[task.setvariable variable=FOO]$FOO"
-
-
-
+- bash: echo This script could use $SYSTEM_ACCESSTOKEN
+    
   
