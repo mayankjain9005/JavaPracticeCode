@@ -17,7 +17,6 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
-
 - task: azure-deveops-ispw-operation-task@2
   inputs:
     connectionId: 'cw09.bmc.com:47623#1047 - Latin 1 (Open Systems)'
@@ -28,6 +27,6 @@ steps:
     ispwpassword: 'ispw13'
     stream: 'play'
     application: 'play'
-    subApplication: 'play'
-    encryptionProtocol: 'NONE'
     codePage: '1047 - Latin 1 (Open Systems)'
+    timeout: '1000000'
+    branchMapping: '**/dev1 => DEV1, per-commit'
