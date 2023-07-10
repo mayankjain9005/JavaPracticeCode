@@ -30,3 +30,4 @@ steps:
     codePage: '1047 - Latin 1 (Open Systems)'
     timeout: '1000000'
     branchMapping: '**/dev1 => DEV1, per-commit'
+    encryptionProtocol: 'NONE'
