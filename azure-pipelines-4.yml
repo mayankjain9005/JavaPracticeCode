@@ -18,7 +18,7 @@ steps:
   inputs:
     connectionId: 'cw09.bmc.com:47623#1047 - Latin 1 (Open Systems)'
     operationType: 'ISPWSYNC'
-    windowsWorkbenchCliHome: 'C:/WorkbenchCLI'
+    windowsWorkbenchCliHome: 'C:\WorkbenchCLI'
     runtimeConfiguration: 'tpzp'
     ispwusername: 'ispwtpz'
     ispwpassword: 'ispw13'
