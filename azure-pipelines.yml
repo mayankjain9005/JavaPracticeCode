@@ -17,3 +17,17 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+- task: downloadertask@1
+  inputs:
+    connectionId: 'cw09.bmc.com:47623#1047 - Latin 1 (Open Systems)'
+    runtimeConfig: 'tpzp'
+    ispwUserId: 'ispwtpz'
+    password: 'ispw14'
+    windowsTopazWorkbenchCliHome: 'C:\WorkbenchCLI'
+    sourceDownloadLocation: 'c:\maya\test'
+    downloadSourceType: 'Container'
+    containerType: 'Assignment'
+    containerId: 'HARY008939'
+    taskLevel: 'QA'
+    downloadUnchangedSource: true
+    downloadIncludes: true
