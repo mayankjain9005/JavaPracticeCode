@@ -17,29 +17,3 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
-- task: azure-deveops-ispw-operation-task@1
-  inputs:
-    request: |
-      #The following messages are commented out to show how to use the 'Request' field.
-      #Click on the help button to the right of the screen for examples of how to populate this field based on 'Action' type
-       #
-       #For example, if you select GenerateTasksInAssignment for 'Action' field,
-      # you may populate the following properties in 'Request' field.
-       # The property value should be based on your own container ID and level.
-       #
-       #assignmentId=PLAY000313
-       #level=STG2
-    headers: |
-      {
-      "Content-Type":"application/json", 
-      "PlanUrl": "$(system.CollectionUri)", 
-      "ProjectId": "$(system.TeamProjectId)", 
-      "HubName": "$(system.HostType)", 
-      "PlanId": "$(system.PlanId)", 
-      "JobId": "$(system.JobId)", 
-      "TimelineId": "$(system.TimelineId)", 
-      "TaskInstanceId": "$(system.TaskInstanceId)", 
-      "AuthToken": "$(system.AccessToken)"
-      }
-    skipWaitingForSetCompletion: false
-    showResponseBodyInConsole: true
