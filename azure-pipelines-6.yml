@@ -7,10 +7,17 @@ trigger:
 - master
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
-
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+- task: downloadertask2@1
+  inputs:
+    cesUrl: 'http://172.19.172.110:48226/bmc/'
+    connectionId: 'cw09.bmc.com:47624#1047 - Latin 1 (Open Systems)'
+    runtimeConfig: 'TPTP'
+    cesSecretToken: 'b78e97ce-1a37-4072-9344-c65ea2ef1058'
+    sourceDownloadLocation: 'c;\TEMP'
+    downloadSourceType: 'Repository'
+    stream: 'TOPAZ'
+    application: 'HARY'
+    subAppl: 'HARY'
+    repositoryLevel: 'DEV1'
+    levelOption: 'SelectedLevelOnly'
+    cpCategorizeOnComponentType: true
