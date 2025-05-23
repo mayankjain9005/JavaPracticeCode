@@ -13,7 +13,7 @@ steps:
     connectionId: 'cw09.bmc.com:47624#1047 - Latin 1 (Open Systems)'
     runtimeConfig: 'TPTP'
     cesSecretToken: 'b78e97ce-1a37-4072-9344-c65ea2ef1058'
-    sourceDownloadLocation: 'c;\TEMP'
+    sourceDownloadLocation: 'c:\TEMP'
     downloadSourceType: 'Repository'
     stream: 'TOPAZ'
     application: 'HARY'
