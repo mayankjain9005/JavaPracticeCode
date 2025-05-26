@@ -9,7 +9,7 @@ trigger:
 steps:
 - task: downloadertask2@1
   inputs:
-    cesUrl: 'http://172.19.172.110:48226/bmc/'
+    cesUrl: 'http://172.19.172.110:48226'
     connectionId: 'cw09.bmc.com:47624#1047 - Latin 1 (Open Systems)'
     runtimeConfig: 'TPTP'
     cesSecretToken: 'b78e97ce-1a37-4072-9344-c65ea2ef1058'
